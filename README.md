@@ -2,7 +2,7 @@
 A Minecraft Datapack to recover your last death position, and add a soul on your death spot.
 
 # Requires 
-- Minecraft 1.16
+- Minecraft 1.13 / 1.14 / 1.15 / 1.16
 
 # Use
 1. Download the package and unzip it
