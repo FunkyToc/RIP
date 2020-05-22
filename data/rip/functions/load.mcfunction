@@ -8,10 +8,8 @@ scoreboard objectives add RIP_DeathZ dummy {"text":"RIP_DeathZ","color":"dark_pu
 scoreboard objectives add RIP_Dimension dummy {"text":"RIP_Dimension","color":"dark_purple"}
 scoreboard objectives add RIP_Death deathCount {"text":"RIP_DeathCount","color":"dark_purple"}
 scoreboard objectives add lastDeath trigger {"text":"RIP_Trigger","color":"dark_purple"}
-function rip:properties
 
-# mc version
-function rip_mcv:get_mcv
+function rip:properties
 
 # tellraw
 tellraw @a ["",{"text":"RIP","bold":true,"color":"gold","hoverEvent":{"action":"show_text","value":"Develop with love by FunkyToc"}},{"text":" enabled ! "},{"text":"More infos on "},{"text":"planetcraft.com","color":"dark_purple","clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/member/funkytoc/submissions/data-packs/"}}]
