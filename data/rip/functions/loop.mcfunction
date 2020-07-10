@@ -8,7 +8,7 @@ execute if score SoulSpawn RIP_Dimension matches 1 as @a[scores={RIP_Death=1..}]
 execute as @a[scores={lastDeath=1..}] run function rip:hud
 
 # detect and clear deathspot
-execute as @a[scores={RIP_Death=0}] at @s if entity @e[type=minecraft:area_effect_cloud,tag=RIP_Deathspot,distance=..2.1] run function rip:detect
+execute if score SoulAbsorb RIP_Dimension matches 1 as @a[scores={RIP_Death=0}] at @s if entity @e[type=minecraft:area_effect_cloud,tag=RIP_Deathspot,distance=..2.1] run function rip:detect
 
 # reset death score
 execute as @a[scores={RIP_Death=1..}] at @s if entity @e[tag=RIP_Deathspot,distance=..3] run scoreboard players set @s RIP_Death -1

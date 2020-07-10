@@ -18,7 +18,13 @@ scoreboard players set SoulSpawn RIP_Dimension 1
 
 # Soul duration (in minutes)
 # default : 120 (= 2 hours)
+# min-max : 1 - 2000000
 scoreboard players set SoulDuration RIP_Dimension 120
+
+# Soul absorption
+# 0 : player can NOT retrieve their on souls
+# 1 : player can retrieve their on souls
+scoreboard players set SoulAbsorb RIP_Dimension 1
 
 # Show soul spot name
 # 0 : do NOT show the name
