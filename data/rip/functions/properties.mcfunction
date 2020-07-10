@@ -16,6 +16,10 @@
 # 1 : spawn a soul on death
 scoreboard players set SoulSpawn RIP_Dimension 1
 
+# Soul duration (in minutes)
+# default : 120 (= 2 hours)
+scoreboard players set SoulDuration RIP_Dimension 120
+
 # Show soul spot name
 # 0 : do NOT show the name
 # 1 : show the name
