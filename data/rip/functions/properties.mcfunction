@@ -16,7 +16,7 @@
 # 1 : spawn a soul on death
 scoreboard players set SoulSpawn RIP_Dimension 1
 
-# Soul duration (in minutes)
+# Soul duration (in minutes, chunk loaded)
 # default : 120 (= 2 hours)
 # min-max : 1 - 2000000
 scoreboard players set SoulDuration RIP_Dimension 120
