@@ -31,17 +31,27 @@ scoreboard players set SoulAbsorb RIP_Dimension 1
 # 1 : show the name
 scoreboard players set ShowSoulName RIP_Dimension 1
 
-# Copy player name in soul spot name (1.14+)
+# Copy player name in soul spot name
 # 0 : default name is "Lost Soul"
 # 1 : show the dead player's name
 scoreboard players set PlayerSoulName RIP_Dimension 1
 
 # Allow players to use /trigger lastDeath
-# 0 : No one can use it
-# 1 : All players can use it
+# 0 : no one can use it
+# 1 : all players can use it
 scoreboard players set UseTrigger RIP_Dimension 1
 
 # Death coordinates message on death
 # 0 : do NOT whisper you your death position when you die
 # 1 : whisper you your death position when you die
 scoreboard players set AutoMessage RIP_Dimension 1
+
+# Dark Soul MOD (1.16+)
+# 0 : death won't affect max health
+# 1 : death will be punished on max heath
+scoreboard players set DarkSoulMod RIP_Dimension 1
+
+# Max lost health (in hearts) (1.16+)
+# default : 5 (= mid life)
+# min-max : 1-9
+scoreboard players set DarkSoulHealth RIP_Dimension 5

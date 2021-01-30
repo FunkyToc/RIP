@@ -1,0 +1,1 @@
+attribute @s minecraft:generic.max_health modifier add 26061990-0-0-0-004 rip_lv4 -8 add

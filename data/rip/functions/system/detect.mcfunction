@@ -1,5 +1,5 @@
-execute if score McVersion fktool matches ..11500 if score @s RIP_Uuid0 = @e[tag=RIP_Deathspot,limit=1,distance=1..2,sort=nearest] RIP_Uuid0 run tag @s add RIP_Recover
-execute if score McVersion fktool matches 11600.. if score @s RIP_Uuid0 = @e[tag=RIP_Deathspot,limit=1,distance=1..2,sort=nearest] RIP_Uuid0 if score @s RIP_Uuid1 = @e[tag=RIP_Deathspot,limit=1,distance=1..2,sort=nearest] RIP_Uuid1 if score @s RIP_Uuid2 = @e[tag=RIP_Deathspot,limit=1,distance=1..2,sort=nearest] RIP_Uuid2 if score @s RIP_Uuid3 = @e[tag=RIP_Deathspot,limit=1,distance=1..2,sort=nearest] RIP_Uuid3 run tag @s add RIP_Recover
-execute as @s[tag=RIP_Recover] at @s run tag @e[tag=RIP_Deathspot,limit=3,distance=..2.1,sort=nearest] add RIP_Recover
-execute if entity @e[tag=RIP_Recover] run function rip:system/reset_deathspot
+execute if score McVersion fktool matches ..11500 if score @s RIP_Uuid0 = @e[type=minecraft:area_effect_cloud,tag=RIP_Deathspot,limit=1,distance=1..2,sort=nearest] RIP_Uuid0 run tag @s add RIP_Recover
+execute if score McVersion fktool matches 11600.. if score @s RIP_Uuid0 = @e[type=minecraft:area_effect_cloud,tag=RIP_Deathspot,limit=1,distance=1..2,sort=nearest] RIP_Uuid0 if score @s RIP_Uuid1 = @e[tag=RIP_Deathspot,limit=1,distance=1..2,sort=nearest] RIP_Uuid1 if score @s RIP_Uuid2 = @e[tag=RIP_Deathspot,limit=1,distance=1..2,sort=nearest] RIP_Uuid2 if score @s RIP_Uuid3 = @e[tag=RIP_Deathspot,limit=1,distance=1..2,sort=nearest] RIP_Uuid3 run tag @s add RIP_Recover
+execute as @s[tag=RIP_Recover] at @s run tag @e[type=minecraft:area_effect_cloud,tag=RIP_Deathspot,limit=3,distance=..2.1,sort=nearest] add RIP_Recover
+execute if entity @e[type=minecraft:area_effect_cloud,tag=RIP_Recover] run function rip:system/reset_deathspot
 tag @s remove RIP_Recover
