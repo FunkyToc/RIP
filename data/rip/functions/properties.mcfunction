@@ -22,8 +22,8 @@ scoreboard players set SoulSpawn RIP_Dimension 1
 scoreboard players set SoulDuration RIP_Dimension 120
 
 # Soul absorption
-# 0 : player can NOT retrieve their on souls
-# 1 : player can retrieve their on souls
+# 0 : player can NOT retrieve their own souls
+# 1 : player can retrieve their own souls
 scoreboard players set SoulAbsorb RIP_Dimension 1
 
 # Show soul spot name
@@ -33,10 +33,15 @@ scoreboard players set ShowSoulName RIP_Dimension 1
 
 # Copy player name in soul spot name (1.14+)
 # 0 : default name is "Lost Soul"
-# 1 : show the name of the died player
+# 1 : show the dead player's name
 scoreboard players set PlayerSoulName RIP_Dimension 1
 
-# Death auto message on death
+# Allow players to use /trigger lastDeath
+# 0 : No one can use it
+# 1 : All players can use it
+scoreboard players set UseTrigger RIP_Dimension 1
+
+# Death coordinates message on death
 # 0 : do NOT whisper you your death position when you die
 # 1 : whisper you your death position when you die
 scoreboard players set AutoMessage RIP_Dimension 1

@@ -4,3 +4,5 @@ execute if score SoulDuration RIP_Dimension matches 1.. as @e[tag=RIP_Init,dista
 execute if score ShowSoulName RIP_Dimension matches 1 run data merge entity @e[tag=RIP_Deathspot,limit=1,sort=nearest] {CustomNameVisible:1b}
 execute store result score @e[tag=RIP_Init] RIP_Uuid0 run data get entity @s UUIDMost 0.0000000001
 tag @e remove RIP_Init
+
+playsound minecraft:entity.wither_skeleton.ambient player @a[distance=..16] ~ ~-5 ~ 10 0.5 1

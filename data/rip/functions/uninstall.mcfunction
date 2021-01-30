@@ -8,5 +8,10 @@ scoreboard objectives remove RIP_DeathX
 scoreboard objectives remove RIP_DeathY
 scoreboard objectives remove RIP_DeathZ
 scoreboard objectives remove RIP_Dimension
+
+function fktool:uninstall
+
 datapack disable "file/RIP"
 datapack disable "file/RIP-master"
+
+reload
