@@ -26,6 +26,11 @@ scoreboard players set SoulDuration RIP_Dimension 120
 # 1 : player can retrieve their own souls
 scoreboard players set SoulAbsorb RIP_Dimension 1
 
+# Soul protection for items
+# 0 : souls do not prevent items from despawning
+# 1 : souls prevent items from despawning
+scoreboard players set SoulProtect RIP_Dimension 1
+
 # Show soul spot name
 # 0 : do NOT show the name
 # 1 : show the name

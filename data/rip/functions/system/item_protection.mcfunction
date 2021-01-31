@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:area_effect_cloud,tag=RIP_Mainspot] at @s run execute as @e[type=minecraft:item,distance=..10] run data modify entity @s Age set value -30000s

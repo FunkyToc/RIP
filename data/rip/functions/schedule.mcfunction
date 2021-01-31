@@ -8,6 +8,7 @@ execute as @a[scores={RIP_Death=-1}] at @s unless entity @e[tag=RIP_Deathspot,di
 # darksoul mod
 execute if score DarkSoulMod RIP_Dimension matches 0 as @a run function rip:darksoul/attr/clean
 execute if score DarkSoulMod RIP_Dimension matches 1 as @a run function rip:darksoul/modifiers
+execute if score SoulProtect RIP_Dimension matches 1 run function rip:system/item_protection
 
 
 schedule function rip:schedule 5s

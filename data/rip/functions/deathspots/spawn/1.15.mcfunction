@@ -1,4 +1,4 @@
-summon minecraft:area_effect_cloud ~ ~0.53 ~ {Tags:["RIP_Deathspot","RIP_Init"],Age:-144000,Particle:sneeze}
+summon minecraft:area_effect_cloud ~ ~0.53 ~ {Tags:["RIP_Deathspot","RIP_Init","RIP_Mainspot"],Age:-144000,Particle:sneeze}
 summon minecraft:area_effect_cloud ~ ~0.5 ~ {Tags:["RIP_Deathspot","RIP_Init"],Age:-144000,Particle:smoke,CustomName:"\"Lost Soul\""}
 execute if score SoulDuration RIP_Dimension matches 1.. as @e[tag=RIP_Init,distance=..3] store result entity @s Age double -1200 run scoreboard players get SoulDuration RIP_Dimension
 execute if score PlayerSoulName RIP_Dimension matches 1 run function rip:system/get_player_name
