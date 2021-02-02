@@ -14,8 +14,8 @@ function rip:properties
 function rip:secure
 function rip:schedule
 
-tellraw @a ["",{"text":"[RIP]","bold":true,"color":"gold","hoverEvent":{"action":"show_text","value":"Develop with love by FunkyToc"}},{"text":" enabled! "},{"text":"More infos on "},{"text":"planetcraft.com","color":"dark_purple","clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/member/funkytoc/submissions/data-packs/"}}]
+tellraw @a ["",{"text":"[RIP]","bold":true,"color":"gold","hoverEvent":{"action":"show_text","value":"Developed with love by FunkyToc"}},{"text":" enabled! "},{"text":"More infos on "},{"text":"planetcraft.com","color":"dark_purple","clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/member/funkytoc/submissions/data-packs/"}}]
 execute if score McVersion fktool matches ..11499 run tellraw @a ["",{"text":"[RIP]","bold":true,"color":"gold"},{"text":" Fatal : Version 1.14 or inferior detected !","color":"red"}]
-execute if score McVersion fktool matches ..11499 run tellraw @a ["",{"text":"[RIP]","bold":true,"color":"gold"},{"text":" This datapack needs 1.15 at least.","color":"red"}]
+execute if score McVersion fktool matches ..11499 run tellraw @a ["",{"text":"[RIP]","bold":true,"color":"gold"},{"text":" This datapack needs 1.15 at least. Prefer 1.16.","color":"red"}]
 execute if score McVersion fktool matches 11500 run tellraw @a ["",{"text":"[RIP]","bold":true,"color":"gold"},{"text":" Notice : Version 1.15 detected !","color":"red"}]
 execute if score McVersion fktool matches 11500 run tellraw @a ["",{"text":"[RIP]","bold":true,"color":"gold"},{"text":" Prefer 1.16 to enable the Dark Soul Mod.","color":"red"}]
