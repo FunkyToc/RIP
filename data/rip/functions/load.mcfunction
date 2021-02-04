@@ -12,7 +12,7 @@ scoreboard objectives add lastDeath trigger {"text":"RIP_Trigger","color":"dark_
 
 function rip:properties
 function rip:secure
-function rip:schedule
+function rip:schedules
 
 tellraw @a ["",{"text":"[RIP]","bold":true,"color":"gold","hoverEvent":{"action":"show_text","value":"Developed with love by FunkyToc"}},{"text":" enabled! "},{"text":"More infos on "},{"text":"planetcraft.com","color":"dark_purple","clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/member/funkytoc/submissions/data-packs/"}}]
 execute if score McVersion fktool matches ..11499 run tellraw @a ["",{"text":"[RIP]","bold":true,"color":"gold"},{"text":" Fatal : Version 1.14 or inferior detected !","color":"red"}]
