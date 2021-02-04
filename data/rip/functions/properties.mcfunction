@@ -26,6 +26,11 @@ scoreboard players set SoulDuration RIP_Dimension 120
 # 1 : player can retrieve their own souls
 scoreboard players set SoulAbsorb RIP_Dimension 1
 
+# Soul Regen
+# 0 : soul recovering won't have a regen effect
+# 1 : soul recovering will have a regen effect
+scoreboard players set SoulRegen RIP_Dimension 1
+
 # Soul protection for items
 # 0 : souls do not prevent items from despawning
 # 1 : souls prevent items from despawning
